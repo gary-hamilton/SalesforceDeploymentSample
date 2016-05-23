@@ -1,7 +1,7 @@
 # ReleaseExample1
-Main Header
 ===========
-Author is Gary Hamilton
+Gary Hamilton <ghamilton@acumensolutions.com>
+Version 1.0
 # Sample project for continuous integration
 # Running Apache Ant in workspace executes deployeCodeCheckOnly task
 # Run in Jenkins supplying sf.username and sf.password as parameters
