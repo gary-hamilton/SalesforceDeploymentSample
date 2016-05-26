@@ -1,4 +1,4 @@
-<project name="Salesforce CI sample" default="deployCodeCheckOnly" basedir="." xmlns:sf="antlib:com.salesforce">
+<project name="Salesforce CI validation sample" default="deployCodeCheckOnly" basedir="." xmlns:sf="antlib:com.salesforce">
 
     <property environment="env"/>
     <!-- Set default directory -->
@@ -30,7 +30,8 @@ sf.serverurl       : ${sf.serverurl}
 metadata.directory : ${metadata.directory}
 		</echo>		
       <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" 
-      serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="${metadata.directory}" checkOnly="true"/>
+      serverurl="${sf.serverurl}" maxPoll="500" deployRoot="${metadata.directory}" checkOnly="true"
+      testLevel="RunLocalTests" pollWaitMillis="10000" />
     </target>
 	
 	
