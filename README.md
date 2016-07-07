@@ -9,4 +9,3 @@ Run in Jenkins supplying sf.serverurl, sf.username and sf.password as parameters
 
 Jenkins will call ant with parameters such as these: -Dsf.username=xxxx -Dsf.password=yyyy -Dsf.serverurl=cs2.salesforce.com
 
-config.xml is the Jenkins configuration file for sample job.
